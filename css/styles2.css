@@ -1,0 +1,578 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.truckContainer {
+    background-color: red;
+    width: fit-content;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imageWraper1,
+.imageWraper2 {
+    position: relative;
+    background-color: yellow;
+    width: fit-content;
+}
+
+.firstImage,
+.secondImage {
+    width: 100%;
+    height: 100vh;
+}
+
+.card1,
+.card2 {
+    position: absolute;
+    top: 0%;
+    background-color: rgb(31, 31, 31);
+    color: rgb(228, 228, 228);
+    border-radius: 5px;
+    padding: 20px;
+    height: 75%;
+}
+
+.card1 {
+    width: 50%;
+    right: 0%;
+}
+
+.card2 {
+    width: 80%;
+    left: 5%;
+}
+
+
+/* First Card Design */
+.orderID h3 {
+    margin: 0;
+    color: #757677;
+}
+
+.orderID {
+    background-color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.itemListContainer {
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 60%;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header,
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(26, 26, 26);
+    font-weight: bold;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    background-color: #f0f0f0;
+    color: #252525;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+    text-align: center;
+}
+
+.table .row {
+    height: 150px;
+    /* Set a fixed height for cards */
+}
+
+
+.calculationContainer {
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #252525;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+.calculationContainer table {
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+}
+
+
+
+
+/* Card2 implementation */
+
+.adminBtnDiv {
+    background-color: aqua;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Space out items */
+    align-items: center;
+    /* Center items vertically */
+    margin-bottom: 19%;
+}
+
+.adminBtnDiv .adminBtn {
+    height: 30px;
+    margin-left: auto;
+    /* Push the button to the right */
+}
+
+.itemsContainer {
+    background-color: none;
+    margin-bottom: 7%;
+}
+
+.itemGrid {
+    background-color: none;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+.item {
+    background-color: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.itemDetails {
+    background-color: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemDetails h5,
+p {
+    margin: 0;
+}
+
+.details {
+    display: block;
+    margin-left: 0px;
+}
+
+.buttons {
+    background-color: none;
+}
+
+.buttons .btns {
+    width: 15%;
+    height: 70px;
+    background-color: #f7cd21;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* bottomslider implementation */
+
+.bottomslider {
+    background-color: none;
+    position: fixed;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sliderButton {
+    height: 40px;
+    background-color: #b22c23;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0 30px;
+}
+
+/* .sliderButton:last-child{
+    margin-right: 0;
+} */
+
+
+
+
+
+
+
+
+/* bottomLogo implementation */
+
+.bottomLogo {
+    position: fixed;
+    background-color: rgb(209, 154, 34);
+    width: 10%;
+    height: 18%;
+    bottom: 6%;
+    right: 21%;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    font-weight: 1000;
+    border-radius: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 700px) and (max-height: 800px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 21%;
+    }
+
+    .itemsContainer {
+        margin-bottom: 10%;
+    }
+
+    .itemGrid {
+        row-gap: 40px;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 5%;
+    }
+
+    .sliderButton {
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1440px) and (min-height: 700px) and (max-height: 1100px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 25%;
+    }
+
+    .itemsContainer {
+        margin-bottom: 12%;
+    }
+
+    .itemGrid {
+        row-gap: 50px;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 5%;
+    }
+
+    .sliderButton {
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1200px) and (min-height: 700px) and (max-height: 1100px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 20%;
+    }
+
+    .itemsContainer {
+        margin-bottom: 8%;
+    }
+
+    .itemGrid {
+        row-gap: 40px;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 4%;
+    }
+
+    .sliderButton {
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) and (max-height: 600px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 13%!important;
+    }
+
+    .itemsContainer {
+        margin-bottom: 6%!important;
+        
+    }
+
+    .itemGrid {
+        row-gap: 24px!important;
+    }
+
+    .buttons .btns {
+        height: 50px;
+        font-weight: 800;
+        font-size: .7em;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 5%;
+    }
+
+    .sliderButton {
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 720px) and (max-height: 540px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 16% !important;
+    }
+
+    .itemsContainer {
+        margin-bottom: 12%;
+    }
+
+    .itemGrid {
+        row-gap: 30px !important;
+    }
+
+    .itemDetails h5, p {
+        font-size: .6em;
+    }
+
+    .buttons .btns {
+        height: 40px;
+        font-weight: 600;
+        font-size: .5em;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 5%;
+    }
+
+    .sliderButton {
+        padding: 0 10px!important;
+        font-size: .6em;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* This media query direclty for Surface Pro 7 tablet */
+@media (max-width: 1368px) and (max-height: 912px) {
+
+    /* Responsive Card2 implementation */
+
+    .adminBtnDiv {
+        margin-bottom: 20%;
+    }
+
+    .itemsContainer {
+        margin-bottom: 8%;
+    }
+
+    .itemGrid {
+        row-gap: 42px;
+    }
+
+
+
+
+    /* bottomslider implementation */
+
+    .bottomslider {
+        bottom: 4%;
+    }
+
+    .sliderButton {
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+    /* bottomLogo implementation */
+
+    .bottomLogo {
+        right: 16%;
+    }
+
+}
